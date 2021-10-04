@@ -1,0 +1,341 @@
+@import url(null.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+	min-height: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+}
+.container {
+    max-width: 1165px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    background-color: #EEEFF1;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:57px;
+}
+.header__logo {
+}
+.header__menu {
+}
+
+@media(max-width:787px){
+    .header__menu {
+        display: none;
+    }
+}
+.header__list {
+    display: flex;
+}
+.header__item a{
+    display: inline-block;
+    cursor: pointer;
+}
+.header__item:not(:last-child){
+    margin-right: 42px;
+}
+.header__link {
+    color: black;
+}
+.header__svg{
+    fill:#34547A;
+    stroke: #34547A;
+    transition: .5s;
+}
+/*====================HOVER===================*/
+
+.header__item a:after {
+    background-color: black; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    margin: 0 auto;
+}
+.header__item a:hover:after,
+.header__item a:focus:after {
+    width: 70%;
+    margin: 0 auto;
+}
+.header__svg:hover{
+    /* fill:#00D5E4; */
+    fill: none;
+    transition: .3s;
+}
+/*===================MAIN=====================*/
+
+.main {
+}
+/*=============SECTION PRIME==================*/
+.prime {
+    width: 100%;
+    background: #EEEFF1;
+}
+.prime__conteiner {
+    max-width: 1027px;
+    padding: 140px 15px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+@media(max-width:945px){
+    .prime__conteiner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .prime__body {
+        margin-top: 60px;
+    }
+}
+@media(max-width:386px){
+    .prime__title{
+        font-size: 20px;
+    }
+    .prime__body {
+        margin-top: 15px;
+    }
+}
+
+.prime__icon svg {
+    max-width: 100%;
+}
+.prime__body {
+}
+.prime__title {
+    font-size: 48px;
+    line-height: 79px;
+}
+.prime__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #727272;
+    margin: 60px 0px;
+    max-width: 520px;
+}
+.prime__button {
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    -webkit-transition: .8s;
+     -moz-transition: .8s;
+     -o-transition: .8s;
+     transition: .8s;
+}
+
+.prime__button:hover {
+    background: #EEEFF1;
+    border: 3px solid #34547A;
+    color: #34547A;
+    -webkit-transition: .4s;
+     -moz-transition: .4s;
+     -o-transition: .4s;
+     transition: .4s;
+}
+
+/*=================SECTION ABOUT==============*/
+.about {
+    width: 100%;
+}
+.about__container {
+    max-width: 538px;
+    padding: 100px 15px;
+    margin: 0 auto;
+}
+.about__title {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #727272;
+}
+    
+/*=================SECTION BLOCK==============*/
+.block{
+    width: 100%;
+    height: 250px;
+    background: #34547A;
+}
+
+/*=================SECTION SKILL==============*/
+
+.skill {
+    width: 100%;
+}
+.skill__container {
+    max-width: 1165px;
+    padding: 100px 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:1110px) {
+    .skill__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill__body {
+        margin-bottom: 70px
+    }
+    .skill__title{
+        text-align: center;
+    }
+    .skill__img{
+        max-width: 405px;
+        height: 300px;
+    }
+}
+@media(max-width:622px) {
+    .skill__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill__body {
+        margin-bottom: 70px
+    }
+    .skill__title{
+        text-align: center;
+    }
+}
+
+@media (max-width:460px) {
+    .skill__img{
+        height: 430px;
+    }
+}
+.skill__body {
+}
+.skill__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 50px;
+}
+.skill__skills {
+
+}
+.skill__item {
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+/*=============================================================*/ 
+
+.loading {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 4px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+.loading:not(:last-child){
+    margin-bottom: 30px;
+}
+  
+  .square-animation:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: load 3s;
+    animation-fill-mode: both;
+
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+      background: #a28089;
+    }
+    
+    to {
+      width: 70%;
+      background: #34547A;
+    }
+  }
+
+.skill__img {
+    max-width: 555px;
+    height: 554px;
+
+}
+
+.skill__img img{
+    max-width: 100%;
+}
+
+
+/*=============FOOTER===============*/
+.footer {
+    width: 100%;
+    background: #34547A;;
+}
+.footer__container {
+    max-width: 1165px;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer__body{
+    color: #FFFFFF;
+}
+.footer__initials {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.footer__rights {
+    font-size: 13px;
+    line-height: 21px;
+}
+.footer__messengers {
+}
+.footer__icon {
+}
+.footer__icon svg:not(:last-child){
+    margin-right: 22px;
+}
