@@ -11,6 +11,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    background-color: white;
 }
 .container {
     max-width: 1165px;
@@ -201,10 +202,10 @@
     padding: 100px 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-@media(max-width:1110px) {
+@media(max-width:856px) {
     .skill__container {
         margin: 0 auto;
         display: flex;
@@ -217,8 +218,8 @@
         text-align: center;
     }
     .skill__img{
-        max-width: 405px;
-        height: 300px;
+        /* max-width: 405px; */
+        /* height: 300px; */
     }
 }
 @media(max-width:622px) {
@@ -235,9 +236,12 @@
     }
 }
 
-@media (max-width:460px) {
+@media(max-width:344px) {
+    .loading {
+        width: 150px;
+    }
     .skill__img{
-        height: 430px;
+        /* height: 430px; */
     }
 }
 .skill__body {
@@ -262,7 +266,7 @@
 .loading {
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 200px;
     height: 4px;
     background: #f1f1f1;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
@@ -291,15 +295,13 @@
     }
     
     to {
-      width: 70%;
+      width: 85%;
       background: #34547A;
     }
   }
 
 .skill__img {
-    max-width: 555px;
-    height: 554px;
-
+    width: 300px;
 }
 
 .skill__img img{
